@@ -6,10 +6,6 @@ body {
     margin: 0;
     font-family: 'Ink Free';
     font-style: normal;
-    /* position: relative; */
-    /* width: 1440px; */
-    /* height: 1024px; */
-
 }
 
 .landingPage {
@@ -69,7 +65,6 @@ body {
     color: #fff;
     margin: 0px 20px 0 50px;
     text-align: center;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .btnMenu:hover {
@@ -80,7 +75,6 @@ body {
 .btnAboutUs {
     width: 120px;
     height: 42px;
-    /* background: #502D00; */
     border: 2px solid #000000;
     border-radius: 50px;
     font-weight: 400;
@@ -121,36 +115,45 @@ body {
 
 .menuPage {
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .btnAddProduct {
-    /* position: absolute; */
     width: 10%;
     height: 5%;
-    margin: 1% 0 0 77%;
     background-color: #DD918F;
     border: 2px solid #000000;
     border-radius: 50px;
     color: #fff;
+    float: right;
+    margin-right: 6%;
+}
+
+.selectedProduct {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 2%;
 }
 
 .selectedImage {
-    width: 16%;
-    height: 40%;
-    margin: 2% 0 0 15%;
-    background: url("../images/honeyLatte.jfif");
-    background-size: 100% 120%;
-    background-position: center;
+    position: absolute;
+    width: 17%;
+    height: 43%;
+    left: 20%;
+    top: 105%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .selectedProdDesc {
     position: absolute;
     width: 47%;
     height: 36%;
-    left: 29%;
-    top: 125%;
+    left: 34%;
+    top: 120%;
     padding: 2%;
     background: linear-gradient(0deg, #FFF9FC, #FFF9FC), #D9D9D9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -173,19 +176,22 @@ body {
 }
 
 .productList {
-    margin: 6% 0 0 15%;
-    height: 35%;
-    width: 82%;
+    height: 41%;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+    position: absolute;
+    top: 158%;
 }
 
 .productList div {
-    width: 20% !important;
-    height: 97%;
+    width: 21%;
+    height: 100%;
     background-size: 100% 120%;
     background-position: center;
     border-radius: 20px;
     padding: 0;
-    margin-right: 2%;
+    margin-right: 1%;
     overflow: hidden;
 }
 
@@ -193,9 +199,11 @@ body {
     border: 3px solid #EBC089;
 }
 
-.productList div img {
+.productList div img,
+.selectedImage img {
     height: 100%;
     width: 100%;
+    /* object-fit: cover; */
 }
 
 .foot {
